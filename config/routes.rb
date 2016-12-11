@@ -11,4 +11,8 @@ Rails.application.routes.draw do
     end
   end
 
+  # Routes for links
+  get '/links/new', to: 'links#new' # Form View
+  post '/links', to: 'links#create' # Create Action
+
 end
